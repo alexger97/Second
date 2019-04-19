@@ -1,0 +1,33 @@
+﻿@model Web.Models.Login.LoginUser
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+@using (Html.BeginForm("Login", "Login", FormMethod.Post, new { @class = "container-fluid" }))
+{
+    <div class="form-group row">
+        <div class="col-md-5 col-md-offset-3">
+            <label for="UserName">Пользователь</label>
+            <input id="UserName" name="UserName" type="text" class="form-control" placeholder="Пользователь" />
+            @Html.ValidationMessage("UserName", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-md-5 col-md-offset-3">
+            <label for="Password">Пароль</label>
+            <input id="Password" name="Password" type="password" class="form-control" placeholder="Пароль">
+            @Html.ValidationMessage("UserName", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-md-5 col-md-offset-3">
+            <button type="submit" class="btn btn-block btn-primary">Войти</button>
+        </div>
+    </div>
+
+
+}

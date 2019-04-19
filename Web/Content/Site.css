@@ -1,0 +1,22 @@
+﻿ body,html {
+
+     margin: 0;padding:0;
+
+ }
+
+ .navbar{
+
+     border-radius: 0 !important;
+ }
+
+ .nav.navbar-nav.navbar-right li a {
+     display:inline; 
+ }
+
+ .ajax-loader{
+
+     display:block;
+     width:16px;
+     height:16px;
+     background-image:scrol
+ }
